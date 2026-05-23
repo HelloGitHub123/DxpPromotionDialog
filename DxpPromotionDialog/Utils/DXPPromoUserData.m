@@ -1,12 +1,12 @@
-#import "DXPUserData.h"
+#import "DXPPromoUserData.h"
 
-@implementation DXPUserData
+@implementation DXPPromoUserData
 
 + (instancetype)sharedInstance {
-    static DXPUserData *instance;
+    static DXPPromoUserData *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[DXPUserData alloc] init];
+        instance = [[DXPPromoUserData alloc] init];
     });
     return instance;
 }

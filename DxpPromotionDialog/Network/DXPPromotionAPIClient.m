@@ -3,7 +3,7 @@
 #import "DXPQueryAllChannelsResp.h"
 #import "DXPChannelReq.h"
 #import "DXPGlobalStorage.h"
-#import "DXPUserData.h"
+#import "DXPPromoUserData.h"
 #import "DXPJSONHelper.h"
 #import "DXPPromotionTags.h"
 #import <DXPNetWorkingManagerLib/DCNetAPIClient.h>
@@ -164,7 +164,7 @@
     request.HTTPMethod = @"POST";
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     request.HTTPBody = [NSJSONSerialization dataWithJSONObject:body options:0 error:nil];
-    NSString *token = [DXPUserData sharedInstance].token;
+    NSString *token = [DXPPromoUserData sharedInstance].token;
     if (![DXPJSONHelper isEmptyString:token]) {
         [request setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     }

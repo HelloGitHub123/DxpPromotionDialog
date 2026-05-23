@@ -3,7 +3,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Demo 占位，对应 Android DxpUserData。集成时替换为真实 Base SDK。
-@interface DXPUserData : NSObject
+@interface DXPPromoUserData : NSObject
 
 + (instancetype)sharedInstance;
 

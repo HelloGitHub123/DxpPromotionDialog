@@ -18,5 +18,5 @@ FOUNDATION_EXPORT const unsigned char DXPPromotionDialogVersionString[];
 #import "DXPPopupModel.h"
 #import "DXPPromotionLifecycleDelegate.h"
 #import "DXPGlobalStorage.h"
-#import "DXPUserData.h"
+#import "DXPPromoUserData.h"
 #import "DXPSDKConfig.h"

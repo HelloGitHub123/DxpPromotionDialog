@@ -1,11 +1,11 @@
 #import "DXPWebJSBridgeHandler.h"
-#import "DXPUserData.h"
+#import "DXPPromoUserData.h"
 #import <UIKit/UIKit.h>
 
 @implementation DXPWebJSBridgeHandler
 
 + (NSString *)userInfoJSONString {
-    DXPUserData *user = [DXPUserData sharedInstance];
+    DXPPromoUserData *user = [DXPPromoUserData sharedInstance];
     NSDictionary *params = @{
         @"token": user.token ?: @"",
         @"phone": user.serviceNumber ?: @"",

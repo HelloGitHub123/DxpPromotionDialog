@@ -9,7 +9,7 @@
 #import "DXPPromotionAPIClient.h"
 #import "DXPToolsLoadingHelper.h"
 #import "DXPGlobalStorage.h"
-#import "DXPUserData.h"
+#import "DXPPromoUserData.h"
 #import "DXPSDKConfig.h"
 #import "DXPJSONHelper.h"
 #import "DXPPromotionTags.h"
@@ -143,8 +143,8 @@
         return;
     }
     [DXPToolsLoadingHelper showLoading];
-    NSNumber *subsId = [DXPUserData sharedInstance].subsId;
-    NSString *serviceNumber = [DXPUserData sharedInstance].serviceNumber;
+    NSNumber *subsId = [DXPPromoUserData sharedInstance].subsId;
+    NSString *serviceNumber = [DXPPromoUserData sharedInstance].serviceNumber;
     [[DXPPromotionAPIClient sharedClient] fetchPromotionsWithSubsId:subsId
                                                             channel:@"APP"
                                                              adSlot:@"APP_POPUP"
