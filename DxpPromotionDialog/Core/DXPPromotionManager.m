@@ -172,7 +172,7 @@
             [self.popupPromotionData removeAllObjects];
             [self.forcePopupPromotionData removeAllObjects];
 
-            NSArray<NSString *> *exclude = [DXPGlobalStorage sharedInstance].sdkConfig.promotionDialogConfig.excludePageName;
+			NSArray<NSString *> *exclude = @[]; //[DXPGlobalStorage sharedInstance].sdkConfig.promotionDialogConfig.excludePageName;
 
             for (DXPMktContactDto *dto in response.data) {
                 if (dto.recommendedWordsList.count == 0) continue;
