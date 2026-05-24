@@ -10,7 +10,6 @@
 #import "DXPToolsLoadingHelper.h"
 #import "DXPGlobalStorage.h"
 #import "DXPPromoUserData.h"
-#import "DXPSDKConfig.h"
 #import "DXPJSONHelper.h"
 #import "DXPPromotionTags.h"
 #import "DXPImagePromotionViewController.h"
