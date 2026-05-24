@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.module_name  = "DxpPromotionDialog"
   spec.name         = "DxpPromotionDialog"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "DXP Promotion Dialog"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/HelloGitHub123/DxpPromotionDialog.git", :tag => "1.0.5" }
+  spec.source       = { :git => "https://github.com/HelloGitHub123/DxpPromotionDialog.git", :tag => "1.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
