@@ -1,5 +1,4 @@
 #import "DXPGlobalStorage.h"
-#import "DXPSDKConfig.h"
 
 @implementation DXPGlobalStorage
 
@@ -15,7 +14,6 @@
 - (void)reset {
     self.dxpUrl = nil;
     self.initialized = NO;
-    self.sdkConfig = nil;
 }
 
 @end
